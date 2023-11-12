@@ -8,8 +8,8 @@ export const PlayingField: React.FC = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="text-3xl sm:text-5xl pb-20">Tic Tac Toe</h1>
-      {winner ? <h2 className="text-1xl text-red-500 sm:text-2xl">Winner: {winner}</h2> : null}
+      <h1 className="text-1xl sm:text-5xl pb-20">Tic Tac Toe</h1>
+      {winner ? <h2 className="text-xl text-red-500 sm:text-2xl">Winner: {winner}</h2> : null}
       <Board />
     </div>
   );
