@@ -16,7 +16,7 @@ export const Cell: React.FC<{ index: number }> = ({ index }) => {
     };
 
     return (
-        <td onClick={handleClick} className="cellStyle">
+        <td onClick={handleClick} className="cellStyle w-20 h-20 sm:w-40 sm:h-40 border border-gray-100">
             {cells.cells[index]}
         </td>
     );

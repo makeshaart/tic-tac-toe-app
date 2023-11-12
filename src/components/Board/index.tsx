@@ -8,10 +8,10 @@ export const Board: React.FC = () => {
     };
   
     return (
-      <div>
-        <table className="tableStyle">
-          <tbody>
-            <tr>
+      <div className='flex flex-col '>
+        <table >
+          <tbody className="tableStyle w-400 h-400">
+            <tr >
               <Cell index={0} />
               <Cell index={1} />
               <Cell index={2} />
@@ -28,7 +28,7 @@ export const Board: React.FC = () => {
             </tr>
           </tbody>
         </table>
-        <button onClick={handleReset}>Reset Game</button>
+        <button onClick={handleReset} className="rounded-md border bg-gray-400 hover:border-gray-300 px-4 py-2 mt-5 text-white font-medium transition duration-250">Reset Game</button>
       </div>
     );
   };
